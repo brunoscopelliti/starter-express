@@ -16,6 +16,7 @@
   "author": "Bruno Scopelliti",
   "license": "MIT",
   "dependencies": {
+    "@jscore/envar": "1.0.0",
     "body-parser": "1.18.2",
     "chalk": "2.4.1",
     "cookie-parser": "1.4.3",
