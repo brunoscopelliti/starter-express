@@ -1,3 +1,5 @@
+"use strict";
+
 require("hbs");
 
 class ViewEngineTask {

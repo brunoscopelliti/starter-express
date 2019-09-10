@@ -1,3 +1,5 @@
+"use strict";
+
 const normalize = require("@jscore/envar");
 
 class AppSettingsTask {

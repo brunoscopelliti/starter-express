@@ -1,3 +1,5 @@
+"use strict";
+
 const setupApiRouter = require("server/routing/api");
 
 class RoutingTask {
@@ -10,7 +12,7 @@ class RoutingTask {
     app.get("/", (req, res, next) =>
       res.render("index", { layout: "layout", title: config.TITLE, port: config.PORT }));
 
-    setupApiRouter();
+    setupApiRouter(app);
   }
 }
 

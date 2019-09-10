@@ -1,9 +1,11 @@
+"use strict";
+
 const http = require("http");
 
 const chalk = require("chalk");
 const express = require("express");
 
-const app = express();
+const app = module.exports = express();
 const server = http.Server(app);
 
 require("./server/bootstrap")(app);

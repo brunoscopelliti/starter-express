@@ -1,3 +1,5 @@
+"use strict";
+
 const morgan = require("morgan");
 
 class LogTask {

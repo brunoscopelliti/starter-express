@@ -1,3 +1,5 @@
+"use strict";
+
 const errorhandler = require("errorhandler");
 
 class ErrorHandlerTask {

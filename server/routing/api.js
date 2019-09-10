@@ -1,7 +1,9 @@
+"use strict";
+
 const express = require("express");
 
 const setupRouter =
-  () => {
+  (app) => {
     const router = express.Router();
 
     router.get("/api/sample",
@@ -13,7 +15,7 @@ const setupRouter =
         }
       });
 
-    return router;
+    app.use(router);
   };
 
 module.exports = setupRouter;
