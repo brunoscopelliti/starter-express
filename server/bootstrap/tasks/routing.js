@@ -8,9 +8,13 @@ class RoutingTask {
   }
 
   run (app) {
-    const config = app.get("config");
+    const {
+      PORT,
+      TITLE,
+    } = process.env;
+
     app.get("/", (req, res, next) =>
-      res.render("index", { layout: "layout", title: config.TITLE, port: config.PORT }));
+      res.render("index", { layout: "layout", title: TITLE, port: PORT }));
 
     setupApiRouter(app);
   }

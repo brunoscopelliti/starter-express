@@ -1,6 +1,5 @@
 "use strict";
 
-const AppSettingsTask = require("./tasks/app-settings");
 const AssetsEngineTask = require("./tasks/assets");
 const LogTask = require("./tasks/log");
 const RequestParsersTask = require("./tasks/req-parsers");
@@ -9,7 +8,6 @@ const ViewEngineTask = require("./tasks/view-engine");
 const ErrorHandler = require("./tasks/error-handler");
 
 const tasks = [
-  new AppSettingsTask(),
   new LogTask(),
   new RequestParsersTask(),
   new AssetsEngineTask(),
